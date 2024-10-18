@@ -8,6 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
+////
+///     Nom: ISAAC Sammuel Ramclief
+///     Cours: Introduction à l'intelligence artificielle
+///     Devoir: Devoir 2
+///             -> Jeu de Tic Tac Toe en utilisant les méthodes prédéfinies reçues.
+///
+
+
 namespace TiTaTo
 {
     /// <summary>
@@ -37,14 +47,14 @@ namespace TiTaTo
             /// <returns>X ou bien O</returns>
             private String calculateWinner()
             {
-                // Define winning combinations
+                // Winning combinations
                 int[,] winningCombos = new int[,] {
-                    { 0, 1, 2 },  // First row
-                    { 3, 4, 5 },  // Second row
-                    { 6, 7, 8 },  // Third row
-                    { 0, 3, 6 },  // First column
-                    { 1, 4, 7 },  // Second column
-                    { 2, 5, 8 },  // Third column
+                    { 0, 1, 2 },  // Row 1
+                    { 3, 4, 5 },  // Row 2
+                    { 6, 7, 8 },  // Row 3
+                    { 0, 3, 6 },  // Column 1
+                    { 1, 4, 7 },  // Column 2
+                    { 2, 5, 8 },  // Column 3
                     { 0, 4, 8 },  // Diagonal top-left to bottom-right
                     { 2, 4, 6 }   // Diagonal top-right to bottom-left
                 };
@@ -184,7 +194,10 @@ namespace TiTaTo
                 btn8.Enabled = false;
             }
 
-       
+        private void frmTiTaTo_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
